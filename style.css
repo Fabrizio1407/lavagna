@@ -12,6 +12,7 @@ body {
     background-color: azure;
     width: 600px;
     height: 600px;
+    flex-wrap: wrap;
 }
 
 h1 {

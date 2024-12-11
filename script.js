@@ -29,12 +29,12 @@ function createGrid(number)
 {for (let i=0;i<number;i++) {
     const rowname= `row${i}`;
     rows[rowname] = document.createElement("div");
-    rows[rowname].style.display = "flex";
+    rows[rowname].setAttribute("style", "display: flex; width: 600px; background-color: white;");
     for(let j=0;j<number;j++) {
         const cellname= `cell${i}${j}`;
         cells[cellname] = document.createElement("div");
 
-        cells[cellname].setAttribute("style", `border: 1px solid black; flex:1`);
+        cells[cellname].setAttribute("style", `border: 1px solid black; background-color:white; flex:1`);
 
         cells[cellname].addEventListener('mouseover', function(e) {
             e.target.style.backgroundColor = "blue";
